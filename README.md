@@ -9,11 +9,11 @@
 ## What has changed?
 * in yolo3_one_file_to_detect_them_all.py
     + +import sys
-    + np.set_printoptions(threshold=np.nan) ==> np.set_printoptions(threshold=sys.maxsize)
+    + np.set_printoptions(threshold=np.nan) => np.set_printoptions(threshold=sys.maxsize)
 
 * in requirements.txt
     + +pillow==7.2.0
     + +matplotlib==3.0.3
     + -tensorboard==1.15.0
-    + Keras==2.3.1 ==> Keras==2.2.0
-    + tensorflow==1.15.0 ==> tensorflow==1.6.0
+    + Keras==2.3.1 => Keras==2.2.0
+    + tensorflow==1.15.0 => tensorflow==1.6.0
