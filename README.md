@@ -9,12 +9,12 @@
 ## What has changed?
 * in yolo3_one_file_to_detect_them_all.py
     + +import sys
+    + +img_file = 'dog_detected.jpg'
+    + +img = cv2.imread(img_file)
+    + +cv2.imshow('Result', img)
+    + +cv2.waitKey()
+    + +cv2.destroyAllWindows()
     + np.set_printoptions(threshold=np.nan) => np.set_printoptions(threshold=sys.maxsize)
-    + img_file = 'dog_detected.jpg'
-    + img = cv2.imread(img_file)
-    + cv2.imshow('Result', img)
-    + cv2.waitKey()
-    + cv2.destroyAllWindows()
 
 * in requirements.txt
     + +pillow==7.2.0
