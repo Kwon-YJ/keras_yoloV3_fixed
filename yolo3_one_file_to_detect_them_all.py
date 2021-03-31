@@ -433,3 +433,9 @@ def _main_(args):
 if __name__ == '__main__':
     args = argparser.parse_args()
     _main_(args)
+
+    img_file = 'dog_detected.jpg'
+    img = cv2.imread(img_file)
+    cv2.imshow('Result', img)
+    cv2.waitKey()
+    cv2.destroyAllWindows()
