@@ -3,8 +3,9 @@
 * original : https://github.com/experiencor/keras-yolo3
 ## usage
 * 1: conda create --name keras367 python="3.6.7"
-* 2: https://pjreddie.com/media/files/yolov3.weights <- get weights
-* 3: python yolo3_one_file_to_detect_them_all.py -w yolov3.weights -i dog.jpg
+* 2: pip install -r requirements.txt
+* 3: https://pjreddie.com/media/files/yolov3.weights <- get weights
+* 4: python yolo3_one_file_to_detect_them_all.py -w yolov3.weights -i dog.jpg
 
 ## What has changed?
 * in yolo3_one_file_to_detect_them_all.py
