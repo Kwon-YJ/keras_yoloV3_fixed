@@ -3,14 +3,18 @@
 * original : https://github.com/experiencor/keras-yolo3
 ## usage
 * 1: conda create --name keras367 python="3.6.7"
-* 2: pip install -r requirements.txt
-* 3: https://pjreddie.com/media/files/yolov3.weights <- get weights
-* 4: python yolo3_one_file_to_detect_them_all.py -w yolov3.weights -i dog.jpg
+* 2: https://pjreddie.com/media/files/yolov3.weights <- get weights
+* 3: python yolo3_one_file_to_detect_them_all.py -w yolov3.weights -i dog.jpg
 
 ## What has changed?
 * in yolo3_one_file_to_detect_them_all.py
     + +import sys
     + np.set_printoptions(threshold=np.nan) => np.set_printoptions(threshold=sys.maxsize)
+    + img_file = 'dog_detected.jpg'
+    + img = cv2.imread(img_file)
+    + cv2.imshow('Result', img)
+    + cv2.waitKey()
+    + cv2.destroyAllWindows()
 
 * in requirements.txt
     + +pillow==7.2.0
